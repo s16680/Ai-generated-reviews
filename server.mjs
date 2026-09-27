@@ -66,7 +66,7 @@ app.post("/api/generate-review", async (req, res) => {
   }
 });
 
-app.get("*", (_req, res) => {
+app.get("/{*splat}", (_req, res) => {
   res.sendFile("index.html", { root: "public" });
 });
 
