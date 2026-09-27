@@ -9,8 +9,13 @@
     "make-qr": "node scripts/make-qr.mjs"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "openai": "^6.0.0",
-    "qrcode": "^1.5.4"
+  "express": "^5.1.0",
+  "openai": "^6.0.0",
+  "qrcode": "^1.5.4",
+  "dotenv": "^17.2.2"
+}
+    
+    
+    
   }
 }
