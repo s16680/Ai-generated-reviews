@@ -65,11 +65,16 @@ app.post("/api/generate-review", async (req, res) => {
     res.status(500).json({ error: "Could not generate the review right now." });
   }
 });
+app.get("/", (_req, res) => {
+  res.sendFile("index.html", { root: "public" });
+});
 
-app.get("/{*splat}", (_req, res) => {
+app.get("/review", (_req, res) => {
   res.sendFile("index.html", { root: "public" });
 });
 
 app.listen(port, () => {
+
+
   console.log(`Al Tandoor review app running on http://localhost:${port}`);
 });
