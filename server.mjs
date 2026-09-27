@@ -14,7 +14,7 @@ const client = process.env.OPENAI_API_KEY
 app.use(express.json({ limit: "20kb" }));
 app.use(express.static("public"));
 
-app.get("/config.js", (_req, res) => {
+app.get("/{*splat}", (req, res) => {
   const googleReviewUrl = process.env.GOOGLE_REVIEW_URL || "";
   res.type("application/javascript").send(
     `window.AL_TANDOOR_CONFIG = ${JSON.stringify({ googleReviewUrl })};`
