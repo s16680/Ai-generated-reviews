@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#10261f" />
+  <title>Al Tandoor Ravet • Share Your Experience</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="mark">🔥</div>
+      <div>
+        <div class="brand">AL TANDOOR</div>
+        <div class="location">RAVET</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">QUICK GOOGLE REVIEW</p>
+      <h1>Tell us what you enjoyed ❤️</h1>
+      <p class="sub">Tap the things that genuinely describe your experience. AI will turn your choices into a natural review.</p>
+
+      <div class="chips" id="chips">
+        <button class="chip" data-value="the biryani">🍛 Biryani</button>
+        <button class="chip" data-value="the starters">🍗 Starters</button>
+        <button class="chip" data-value="the main course">🥘 Main course</button>
+        <button class="chip" data-value="the taste">😋 Taste</button>
+        <button class="chip" data-value="the service">😊 Service</button>
+        <button class="chip" data-value="the ambience">✨ Ambience</button>
+        <button class="chip" data-value="the portion size">🍽️ Portion size</button>
+        <button class="chip" data-value="the overall experience">❤️ Overall experience</button>
+      </div>
+
+      <label class="label" for="note">Optional: add your own words</label>
+      <textarea id="note" maxlength="600" placeholder="Example: The chicken biryani was flavorful and the staff was friendly."></textarea>
+
+      <button class="primary" id="generate">✨ Create My Review</button>
+
+      <div class="status" id="status" hidden></div>
+
+      <section class="result" id="result" hidden>
+        <div class="result-title">Your review is ready</div>
+        <textarea id="review" aria-label="Generated review"></textarea>
+        <div class="actions">
+          <button class="secondary" id="copy">📋 Copy Review</button>
+          <a class="google" id="google" href="#" target="_blank" rel="noopener">⭐ Post on Google</a>
+        </div>
+        <p class="tiny">Please read the review and make sure it accurately reflects your genuine experience before posting.</p>
+      </section>
+    </section>
+
+    <footer>Thank you for visiting Al Tandoor, Ravet ❤️</footer>
+  </main>
+
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
